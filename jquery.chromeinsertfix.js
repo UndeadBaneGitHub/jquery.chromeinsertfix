@@ -8,13 +8,13 @@
 */
 (function ($) {
     if (typeof ($.fn.chromeinsertfix) !== "function") {
-        $.fn.chromeinsertfix = function (textToReplace, replaceWith) {
+        $.fn.chromeinsertfix = function (stringToReplace, replaceWith) {
             this.on("DOMNodeInserted", $.proxy(function (e) {
                 if (e.target.parentNode.getAttribute("contenteditable") === "true") {
                     var newTextNode = document.createTextNode("");
                     function antiChrome(node) {
                         if (node.nodeType == 3) {
-                            newTextNode.nodeValue += node.nodeValue.replace(textToReplace || /(\r\n|\n|\r)/gm, replaceWith || " ");
+                            newTextNode.nodeValue += node.nodeValue.replace(stringToReplace, replaceWith);
                         }
                         else if (node.nodeType == 1 && node.childNodes) {
                             for (var i = 0; i < node.childNodes.length; ++i) {
