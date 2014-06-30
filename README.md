@@ -1,4 +1,4 @@
-#jQuery.SimpleSelect
+#jQuery.ChromeInsertFix
 v. 0.1.1 29-06-2014
  - [Repo: github.com/UndeadBaneGitHub/jquery.chromeinsertfix](https://github.com/UndeadBaneGitHub/jquery.chromeinsertfix)
 
