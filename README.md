@@ -35,7 +35,7 @@ Put loading script tag after jquery script tag and loading the zoom image in the
       }
   );
   
-  3. Use regex to modify the contents of processed elements (say, replace all newline symbols with spaces):
+  3. Use regexp to modify the contents of processed elements (say, replace all newline symbols with spaces):
   $(document).ready(
     function() {  
       $("#editable-div-1").chromeinsertfix(/(\r\n|\n|\r)/gm, " ");
