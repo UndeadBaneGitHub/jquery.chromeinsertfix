@@ -1,5 +1,5 @@
 #jQuery.ChromeInsertFix
-v. 0.1.1 29-06-2014
+v. 0.5.1 23-10-2015
  - [Repo: github.com/UndeadBaneGitHub/jquery.chromeinsertfix](https://github.com/UndeadBaneGitHub/jquery.chromeinsertfix)
 
 Hi there!
